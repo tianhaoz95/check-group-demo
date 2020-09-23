@@ -8,11 +8,13 @@ on:
       - ".github/workflows/docs.yml"
 jobs:
   markdown_lint:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: run unit tests
         run: echo "should run markdown lint here"
   github_pages_build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: run unit tests

@@ -8,11 +8,13 @@ on:
       - ".github/workflows/app.yml"
 jobs:
   app_static_analysis:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: run unit tests
         run: echo "should run static analysis here"
   app_unit_tests:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: run unit tests
