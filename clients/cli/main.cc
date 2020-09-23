@@ -1,3 +1,5 @@
+#include <iostream>
+
 int main() {
-  cout << "Hello this is a CLI";
+  std::cout << "Hello this is a CLI";
 }
