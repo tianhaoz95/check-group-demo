@@ -1,0 +1,19 @@
+name: app checks
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "clients/app/**.dart"
+      - ".github/workflows/app.yml"
+jobs:
+  app_static_analysis:
+    steps:
+      - uses: actions/checkout@v2
+      - name: run unit tests
+        run: echo "should run static analysis here"
+  app_unit_tests:
+    steps:
+      - uses: actions/checkout@v2
+      - name: run unit tests
+        run: echo "should run unit tests here"

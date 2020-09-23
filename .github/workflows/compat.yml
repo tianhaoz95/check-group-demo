@@ -1,0 +1,15 @@
+name: compact checks
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "clients/cli/**.cc"
+      - "clients/app/**.dart"
+      - ".github/workflows/cli.yml"
+jobs:
+  compatibility_check:
+    steps:
+      - uses: actions/checkout@v2
+      - name: run compact tests
+        run: echo "should run compatibility tests here"
