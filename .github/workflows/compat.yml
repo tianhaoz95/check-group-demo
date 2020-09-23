@@ -9,6 +9,7 @@ on:
       - ".github/workflows/cli.yml"
 jobs:
   compatibility_check:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: run compact tests
